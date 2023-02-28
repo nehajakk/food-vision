@@ -28,7 +28,7 @@ Dataset : Food101
 - Save model and use later on
 - Preparing above model for fine-tuning
 - Model Callbacks(Minimising resources unnecessary use)
-  * **Tensorboard Callback**: TensorBoard provides the visualization and tooling needed for 
+  * `**Tensorboard Callback**`: TensorBoard provides the visualization and tooling needed for 
                                                                                                                          machine learning experimentation.
   * **EarlyStoppingCallback**:Used to stop training when a validation loss has stopped reducing.
   * **ReduceLROnPlateau** : Reduce learning rate when a model is not finding better prediction                                                                                                                           than previous epochs.
