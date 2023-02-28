@@ -1,6 +1,6 @@
 # 🍔 Food Vision 📷
 
-an end-to-end CNN Image Classification Model which identifies the food in your image.
+### An end-to-end CNN Image Classification Model which identifies the food in your image.
 I exercised using a pre-trained Keras image classification model after that retrained it using the Food101 Dataset.
 Objective:
 Make a better model than the DeepFood Paper's model which also trained on the same dataset.
