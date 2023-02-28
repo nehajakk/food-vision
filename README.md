@@ -11,7 +11,8 @@ Make a better model than the DeepFood Paper's model which also trained on the sa
 Dataset : Food101
 
  Model: EfficientNetB0
-         EfficientNetB7
+ 
+   EfficientNetB7
         
  Training time : 47 min.
  
