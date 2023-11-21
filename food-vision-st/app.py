@@ -53,7 +53,7 @@ file = st.file_uploader(label="Upload an image of food.",
                         type=["jpg", "jpeg", "png"])
 
 
-model = tf.keras.models.load_model("/content/07_efficientnetb0_fine_tuned_101_classes_mixed_precision_80_validation.h5")
+model = tf.keras.models.load_model("/models/07_efficientnetb0_fine_tuned_101_classes_mixed_precision_80_validation.h5")
 
 
 st.sidebar.markdown("Created by **Jaydip Borad**")
