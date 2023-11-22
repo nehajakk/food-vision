@@ -5,4 +5,3 @@ pandas-datareader==0.10.0
 pandas-gbq==0.17.9
 pandas-stubs==1.5.3.230304
 tensorflow==2.14.0
-streamlit==1.24.2
