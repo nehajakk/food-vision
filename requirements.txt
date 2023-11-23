@@ -1,8 +1,5 @@
 altair==5.1.2
 numpy==1.26.2
-pandas==2.1.3
-protobuf==4.23.4
+protobuf
 Pillow==10.1.0
-h5py==3.10.0
-streamlit==1.28.2
-tensorflow-cpu==2.15.0
+tensorflow-cpu==2.14.0
