@@ -140,7 +140,7 @@ def predicting(image, model):
 
 class_names = get_classes()
 
-st.set_page_config(page_title="Food Vision",
+st.set_page_config(page_title="Foodie",
                    page_icon="🍔")
 
 #### SideBar ####
@@ -163,7 +163,7 @@ It is based upom a pre-trained Image Classification Model that comes with Keras 
 
 #### Main Body ####
 
-st.title("Food Vision 🍔📷")
+st.title("Foodie🍔📷")
 st.header("Identify what's in your food photos!")
 st.write("To know more about this app, visit [**GitHub**](https://github.com/boradj/food-vision)")
 file = st.file_uploader(label="Upload an image of food.",

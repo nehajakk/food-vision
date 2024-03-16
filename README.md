@@ -1,4 +1,4 @@
-# 🍔 Food Vision 📷
+# 🍔 Foodie 📷
 
 An end-to-end CNN Image Classification Model which identifies the food in your image.
 
