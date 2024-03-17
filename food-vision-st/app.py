@@ -145,35 +145,33 @@ st.set_page_config(page_title="Foodie",
 
 #### SideBar ####
 
-st.sidebar.title("What's Food Vision ?")
+st.sidebar.title("What's Foodie ?")
 st.sidebar.write("""
-FoodVision is an end-to-end **CNN Image Classification Model** which identifies the food in your image. 
+Our mission is unwavering – to remove the hassle from your daily culinary journey and bring joy back to your kitchen. With a simple photo, we unlock the potential of your ingredients and deliver a personalized list of recipes tailored to your preferences.
 
-It can identify over 100 different food classes
+We created an easy to use and interactive application that allows your to take pictures of ingredients in the your fridge or cabinets and determines from those ingredients what recipes/meals you can make. This will provides real-time and instantaneous results and make cooking less of a hassle and more fun!
 
-It is based upom a pre-trained Image Classification Model that comes with Keras and then retrained on the infamous **Food101 Dataset**.
+**Accuracy :** **`?`**
+                 
+**Model :** **`?`**
 
-**Accuracy :** **`80% +`**
-
-**Model :** **`EfficientNetB0`**
-
-**Dataset :** **`Food101`**
+**Dataset :** **`?`**
 """)
 
 
 #### Main Body ####
 
 st.title("Foodie🍔📷")
-st.header("Identify what's in your food photos!")
-st.write("To know more about this app, visit [**GitHub**](https://github.com/boradj/food-vision)")
-file = st.file_uploader(label="Upload an image of food.",
-                        type=["jpg", "jpeg", "png"])
-
-
+st.header("Identify recipes based on the foods you have!")
+st.write("Add your food images below and select any dietary preferences to generate a list of relevant recipes")
+file = st.file_uploader(label="Upload a maximum of 5 items and a minimum of 1 item. Order the images you upload with the first image being the most important.",
+                        type=["jpg", "jpeg", "png"], accept_multiple_files=True)
 model = tf.keras.models.load_model("./models/07_model.hdf5")
-
-
-st.sidebar.markdown("Created by **Jaydip Borad**")
+option = st.selectbox(
+    'Select from the dropdown list if any of these allergies apply to you',
+    ('Peanuts', 'Tree Nuts', 'All Nuts','Milk','Eggs', 'Fish', 'Shellfish', 'Wheat', 'Soybeans', 'Not Applicable'))
+st.write('You selected:', option)
+st.sidebar.markdown("Created by **ADD**")
 st.sidebar.markdown(body="""
 
 <th style="border:None"><a href="https://twitter.com/jdborad" target="blank"><img align="center" src="https://bit.ly/3wK17I6" alt="jdborad" height="40" width="40" /></a></th>
