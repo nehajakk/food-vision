@@ -163,7 +163,7 @@ We created an easy to use and interactive application that allows your to take p
 
 st.title("Foodie🍔📷")
 st.header("Identify recipes based on the foods you have!")
-st.write("Add your food images below and select any dietary preferences to generate a list of relevant recipes")
+st.write("Add your food images below and select any allergies to generate a list of relevant recipes")
 file = st.file_uploader(label="Upload a maximum of 5 items and a minimum of 1 item. Order the images you upload with the first image being the most important.",
                         type=["jpg", "jpeg", "png"], accept_multiple_files=True)
 model = tf.keras.models.load_model("./models/07_model.hdf5")
